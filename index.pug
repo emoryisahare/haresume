@@ -1,0 +1,109 @@
+doctype html
+head
+  meta(charset="UTF-8")
+  title haresume | Emory Hare
+  link(rel="stylesheet" href="css/style.css")
+  link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+body
+  .hero-image
+    .container
+      h1
+        span Emory Hare
+      span.description Jr. Web Developer | UNC Chapel Hill '17
+      a.btn(href="#") Contact Me
+
+  .nav-bar
+    a(href="#skills") Skills
+    a(href="#experience") Experience
+    a(href="#education") Education
+    a(href="#about") About Me
+  
+  .intro
+    .grid-container
+      .grid-left
+        img#emory-pic(src="./img/emory-square.jpg" alt="Photo of Me")
+      .grid-right
+        h1#intro-heading Welcome to my Resume
+        p
+          | Hi,
+        p.
+          As you can see, my name is Emory. I am a self-taught web developer seeking an entry-level / junior web developer role. I am also available to help with freelancing. 
+        p
+          | Thanks for checking out my site,
+        p
+          | Emory
+
+  #skills
+    h2 Skill Proficiency
+    li
+      h3 HTML5
+        span.bar
+          span.html
+    li
+      h3 CSS3
+        span.bar
+          span.css
+    li
+      h3 JavaScript
+        span.bar
+          span.javascript
+    li
+      h3 jQuery
+        span.bar
+          span.jquery
+
+  #experience
+    h2 Experience
+    .job-container
+      div
+        ul.job
+          li.employer UNC School of Law - Office of Advancement, <span>Chapel Hill, NC</span> - 
+          li
+            span.job-title Advancement Services Coordinator, Major Gifts
+          li.duration February 2018 - March 2019
+          li 
+            p.
+              Updated and maintained DAVIE database (managed donor info, pulled queries, ran acknowledgement reports), handled gift processing, provided daily gift reports, managed weekly and monthly stewardship, created endowments and new fund requests, and independently led the annual scholarship stewardship project to completion. 
+      div
+        ul.job
+          li.employer UNC Facilities Planning & Design, <span>Chapel Hill, NC</span> - 
+          li
+            span.job-title Facilities Planing Intern
+          li.duration June 2016 - September 2016
+          li 
+            p.
+              Designed a Microsoft Access database under the direction of project managers and created a comprehensive mapping of the accessibility of every building on campus.
+      div
+        ul.job
+          li.employer WebPoint IT Solutions, <span>Rocky Mount, NC</span> - 
+          li
+            span.job-title Technical Support Intern
+          li.duration Summers of 2014 & 2015
+          li 
+            p.
+              Provided technical support to clients, built PCs, and completed tickets in LabTech and ConnectWise.
+      div
+        ul.job
+          li.employer Lambeth Restoration & Building, <span>Tarboro, NC</span> - 
+          li
+            span.job-title Construction Worker
+          li.duration Summers of 2009 - 2013
+          li 
+            p.
+              Assisted in historic restoration by performing framing, woodworking, and job-site maintenance duties.
+        
+  #education
+    h2 Education
+  #about
+    h2 About Me
+  //- #footer
+
+
+
+  //- Back to Top Button
+  button#scroll-top
+    i.material-icons arrow_upward
+
+script(src="js/main.js")
+  
+  
