@@ -8,7 +8,7 @@ For the HTML, I used pug as a preprocessor.
 
 For the CSS, I wrote it in plain CSS. After writing about 400 lines of css for a project like this, I will definitely be using Sass or another preprocessor next time. 
 
-For the JS, I used an external JS file. I didn't add much JS to the site other than a button that takes you to the top of the screen. 
+For the JS, I used an external JS file. I didn't add much JS to the site other than a button that takes you to the top of the page. 
 
 If you would like to view the site make sure you open the index.html file in any browser of your choice, but if you open the pug file, nothing will load. 
 
