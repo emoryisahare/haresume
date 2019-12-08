@@ -22,6 +22,7 @@ h2{
   text-transform: uppercase;
 }
 
+
 /* Scroll To Top Icon */
 #scroll-top {
   position: fixed;
@@ -37,6 +38,7 @@ h2{
   border:none;
   cursor: pointer;
 }
+
 
 /* Hero Section */
 .hero-image {
@@ -76,21 +78,11 @@ h2{
   text-shadow: 0 0 10px black;
 }
 
-.btn {
-  color:#402e32;
-  padding: 10px 24px;
-  font-size: 20px;
-  text-decoration: none;
 
-  background: #dfe0df;
-  border-radius: 8px;
-  transition: 0.3s all;
+.site-container {
+  margin-left: 3em;
+  margin-right: 3em;
 }
-
-.btn:hover {
-  opacity: 0.8;
-}
-
 
 /* Navigation Section */
 .nav-bar {
@@ -130,16 +122,22 @@ h2{
     margin-top: 2%;
     margin-bottom: 2%;
   }
+  .nav-bar > a {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
+
 /* Intro Section */
-.intro {
+#intro {
   color: #dfe0df;
 }
 #intro-heading{
  text-align: center;
  text-shadow: 0 0 10px #402e32;
- letter-spacing: 0.125em;
+ letter-spacing: 0.1m;
  text-transform: uppercase;
 }
 .grid-container {
@@ -152,7 +150,7 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1em;
+  padding-top: 2em;
 }
 
 .grid-right {
@@ -162,17 +160,14 @@ h2{
 
   padding: 1em;
   font-size: 18px;
-  font-weight: 600;
   text-shadow: 0 0 10px #402e32;
 
   background-color: #ab3723;
   box-shadow: 2px 2px 10px #402e32;
   border-radius: 1em;
-  margin-right: 1%;
-  margin-left: 1%;
 }
 
-@media(max-width:500px) {
+@media(max-width:900px) {
   .grid-container {
     display: flex;
     flex-direction: column-reverse;
@@ -187,8 +182,6 @@ h2{
 }
 
 
-
-
 /* Skills Section */
 #skills {
   color: #dfe0df;
@@ -197,9 +190,12 @@ h2{
   background: #402e32;
   border-radius: 1em;
   box-shadow: 0 0 15px #402e32;
+  padding: 2em;
+
+  
+  margin-left: auto;
+  margin-right: auto;
   width: 70%;
-  margin: auto;
-  padding: 2em 2em;
 }
 #skills li {
   margin: 20px auto;
@@ -256,6 +252,18 @@ h2{
 #experience {
   background: #ab3723;
   color: #dfe0df;
+  font-size: 18px;
+  text-shadow: 0 0 10px #402e32;
+
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  
+  border-radius: 1em;
+  box-shadow: 0 0 15px #402e32;
+  margin-top: 2em;
+  padding: 2em;
 }
 
 .job-container {
@@ -293,12 +301,172 @@ h2{
 }
 
 
+/* Education Section */
+
+#education {
+  color: #dfe0df;
+  background: #402e32;
+  font-size: 18px;
+  text-shadow: 0 0 10px #665256;
+
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 1em;
+  box-shadow: 0 0 15px #402e32;
+  margin-top: 2em;
+  padding: 2em;
+}
+
+.uni > span{
+  font-weight: normal;
+  text-shadow: none;
+}
+
+.uni-container > ul {
+  list-style: none;
+}
+
+.uni {
+  font-weight: 700;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+}
+
+.major {
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+}
 
 
+/* Achievements Section */
+#achievements {
+  color: #dfe0df;
+  background: #ab3723;
+  font-size: 18px;
+  text-shadow: 0 0 10px #402e32;
+
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 1em;
+  box-shadow: 0 0 15px #402e32;
+  margin-top: 2em;
+  padding: 2em;
+}
+
+ #achievements > ul {
+  list-style: none;
+ }
+
+ .a-name {
+  font-weight: 700;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+  padding: 0.5em 0;
+ }
 
 
+/* About Section */
+#about {
+  color: #dfe0df;
+  background: #402e32;
+  font-size: 18px;
+  text-shadow: 0 0 10px #402e32;
 
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  
 
+  border-radius: 1em;
+  box-shadow: 0 0 15px #402e32;
+  margin-top: 2em;
+  
+  padding: 2em;
+}
+
+.goal-container {
+  margin: 0 2em;
+}
+
+/* footer section */
+#footer {
+  background: #ab3723;
+  color: #dfe0df;
+  font-weight: 500;
+  text-shadow: 0 0 10px #402e32;
+
+  margin-top: 2em;
+  margin-bottom: -1em;
+
+  padding: 1em 2em;
+}
+
+.foot-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.foot-grid * {
+  list-style: none;
+  text-align: left;
+}
+
+.foot-h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.signature {
+  text-align: center;
+}
+
+@media(max-width: 500px){
+  .foot-grid{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#footer a:link {
+  color: #dfe0df;
+  text-decoration: none;
+}
+#footer a:visited {
+  color: #dfe0df;
+  text-decoration: none;
+}
+#footer a:hover {
+  color: #402e32;
+}
+#footer a:active {
+  color: #a98972;
+  text-decoration: none;
+}
+
+hr {
+  color: #402e32;
+
+}
+
+/* Section Margins  */
+@media(max-width: 900px){
+  .site-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #about, #achievements, #education, #experience {
+    width: 90%;
+    padding-left: 1em;
+    padding-right: 1em;
+  } 
+}
 
 
 

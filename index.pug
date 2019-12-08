@@ -9,101 +9,163 @@ body
     .container
       h1
         span Emory Hare
-      span.description Jr. Web Developer | UNC Chapel Hill '17
-      a.btn(href="#") Contact Me
-
+      span.description Jr. Web Developer | UNC-Chapel Hill '17
   .nav-bar
+    a(href="#intro") Home
     a(href="#skills") Skills
     a(href="#experience") Experience
     a(href="#education") Education
     a(href="#about") About Me
-  
-  .intro
-    .grid-container
-      .grid-left
-        img#emory-pic(src="./img/emory-square.jpg" alt="Photo of Me")
-      .grid-right
-        h1#intro-heading Welcome to my Resume
-        p
-          | Hi,
+  .site-container
+    #intro
+      .grid-container
+        .grid-left
+          img#emory-pic(src="./img/emory-square.jpg" alt="Photo of Me")
+        .grid-right
+          h1#intro-heading Welcome to my Website
+          p
+            | Hi,
+          p.
+            My name is Emory Hare, and I am searching for a web development position in the NC Triangle area. With some educational background in programming and newly acquired skills in front-end web development, I am excited to find the right place where I can apply my knowledge and skills in the profession. 
+          p.
+            In the past year, I have studied HTML, CSS, and JavaScript through online courses. I have completed web projects and learned about associated frameworks (Bootstrap, jQuery, React) and preprocessors (Pug/Jade, Sass). This website is my first personal project in which I combine and apply these skills. 
+          p.
+            As an entry level/junior developer, I am seeking a collaborative workplace that encourages growth and learning. In terms of my work style, I am easy-going, adaptable, and creative, so I am looking for a work environment and team that are flexible and welcoming of new ideas.
+          p
+            | Thanks for checking out my site,
+          p
+            | Emory
+
+    #skills
+      h2 Skill Proficiency
+      li
+        h3 HTML5
+          span.bar
+            span.html
+      li
+        h3 CSS3
+          span.bar
+            span.css
+      li
+        h3 JavaScript
+          span.bar
+            span.javascript
+      li
+        h3 jQuery
+          span.bar
+            span.jquery
+
+    #experience
+      h2 Experience
+      .job-container
+        div
+          ul.job
+            li.employer UNC School of Law - Office of Advancement, <span>Chapel Hill, NC</span> - 
+            li
+              span.job-title Advancement Services Coordinator, Major Gifts
+            li.duration February 2018 - March 2019
+            li 
+              p.
+                Updated and maintained DAVIE database (managed donor info, pulled queries, ran acknowledgement reports), handled gift processing, provided daily gift reports, managed weekly and monthly stewardship, created endowments and new fund requests, and independently led the annual scholarship stewardship project to completion. 
+        div
+          ul.job
+            li.employer UNC Facilities Planning & Design, <span>Chapel Hill, NC</span> - 
+            li
+              span.job-title Facilities Planing Intern
+            li.duration June 2016 - September 2016
+            li 
+              p.
+                Designed a Microsoft Access database under the direction of project managers and created a comprehensive mapping of the accessibility of every building on campus.
+        div
+          ul.job
+            li.employer WebPoint IT Solutions, <span>Rocky Mount, NC</span> - 
+            li
+              span.job-title Technical Support Intern
+            li.duration Summers of 2014 & 2015
+            li 
+              p.
+                Provided technical support to clients, built PCs, and completed tickets in LabTech and ConnectWise.
+        div
+          ul.job
+            li.employer Lambeth Restoration & Building, <span>Tarboro, NC</span> - 
+            li
+              span.job-title Construction Worker
+            li.duration Summers of 2009 - 2013
+            li 
+              p.
+                Assisted in historic restoration by performing framing, woodworking, and job-site maintenance duties.
+          
+    #education
+      .uni-container
+          h2 Education
+          ul
+            li.uni UNC-Chapel Hill, <span>Chapel Hill, NC - </span>
+            li.major B.A. in Geography
+            li.duration August 2015 - December 2017
+            p.
+              Graduated in December 2017. Completed Courses in Computer Science, GIS, research methods, statistics, and political geography.
+          ul
+            li.uni East Carolina University, <span>Greenville, NC - </span>
+            li.major Computer Science Major
+            li.duration August 2013 - May 2015
+            p.
+              Completed courses in computer science, computer hardware, and IT. Transferred to UNC in 2015.
+
+    #achievements
+      h2 Achievements
+      ul
+        li.a-name Eagle Scout - 2013
+          li Built a sidewalk and installed a handrail for a local chapel in my hometown.
+        li.a-name Phi Eta Sigma Honors Fraternity (ECU)
+          li Member from 2014 - 2015
+        li.a-name Responsive Web Design Certification - freeCodeCamp
+          li Completed approximately 300 hours of coursework relating to responsive web design.
+    #about
+      h2 About Me
+      .goal-container
         p.
-          As you can see, my name is Emory. I am a self-taught web developer seeking an entry-level / junior web developer role. I am also available to help with freelancing. 
-        p
-          | Thanks for checking out my site,
-        p
-          | Emory
+          I have always been driven by my curiosity and desire to create, and computers have piqued my interest since I can remember. Though my path up to this point has taken unexpected turns, I’m really excited to finally pursue a career that allows me to return to my love of computers and grants me the opportunity to use my creativity. My previous position with the UNC School of Law Office of Advancement was a great opportunity for me right out of college, but I soon realized that it was not the right fit for the long-term. This was when I decided to take the plunge and take the time to get back into programming, and web development seemed like just the right fit for my path forward. 
+        p.
+          Personally, I’m the type of person who is driven by my passions. If something piques my interest, I want to learn everything I can about it. I throw myself in completely and put my all into it. This has led me to have a diverse set of interests and hobbies (and admittedly a little too much knowledge about Pokemon). Web development is something that was initially a personal interest but has grown into what I want to pursue as my career, which makes me really excited for the possibility to pursue a passion as a profession. 
+        p.
+          In my free time, I like to research and learn about new technology, play video games, play tennis, play guitar, and spend time with my family (which includes 2 cats). 
+        p.
+          Thanks for reading,
+        p Emory
 
-  #skills
-    h2 Skill Proficiency
-    li
-      h3 HTML5
-        span.bar
-          span.html
-    li
-      h3 CSS3
-        span.bar
-          span.css
-    li
-      h3 JavaScript
-        span.bar
-          span.javascript
-    li
-      h3 jQuery
-        span.bar
-          span.jquery
+    //- Back to Top Button
+    button#scroll-top
+      i.material-icons arrow_upward
 
-  #experience
-    h2 Experience
-    .job-container
-      div
-        ul.job
-          li.employer UNC School of Law - Office of Advancement, <span>Chapel Hill, NC</span> - 
-          li
-            span.job-title Advancement Services Coordinator, Major Gifts
-          li.duration February 2018 - March 2019
-          li 
-            p.
-              Updated and maintained DAVIE database (managed donor info, pulled queries, ran acknowledgement reports), handled gift processing, provided daily gift reports, managed weekly and monthly stewardship, created endowments and new fund requests, and independently led the annual scholarship stewardship project to completion. 
-      div
-        ul.job
-          li.employer UNC Facilities Planning & Design, <span>Chapel Hill, NC</span> - 
-          li
-            span.job-title Facilities Planing Intern
-          li.duration June 2016 - September 2016
-          li 
-            p.
-              Designed a Microsoft Access database under the direction of project managers and created a comprehensive mapping of the accessibility of every building on campus.
-      div
-        ul.job
-          li.employer WebPoint IT Solutions, <span>Rocky Mount, NC</span> - 
-          li
-            span.job-title Technical Support Intern
-          li.duration Summers of 2014 & 2015
-          li 
-            p.
-              Provided technical support to clients, built PCs, and completed tickets in LabTech and ConnectWise.
-      div
-        ul.job
-          li.employer Lambeth Restoration & Building, <span>Tarboro, NC</span> - 
-          li
-            span.job-title Construction Worker
-          li.duration Summers of 2009 - 2013
-          li 
-            p.
-              Assisted in historic restoration by performing framing, woodworking, and job-site maintenance duties.
-        
-  #education
-    h2 Education
-  #about
-    h2 About Me
-  //- #footer
+    //- JavaScript 
+    script(src="js/main.js")
+#footer
+  .foot-grid
+    div
+      ul
+        li
+          h3.foot-h3 Navigation:
+        li 
+          a(href="#intro") Home
+        li 
+          a(href="#skills") Skills
+        li
+          a(href="#experience") Experience
+        li
+          a(href="#education") Education
+        li
+          a(href="#about") About Me
+    div
+      ul
+        li
+          h3.foot-h3 Social Links:
+          a(href="https://github.com/emoryisahare" target="blank") GitHub/emoryisahare
+        li 
+          a(href="https://www.freecodecamp.org/emroyisahare" target="blank") freeCodeCamp/emroyisahare
+        li 
+          a(href="https://www.linkedin.com/in/emory-hare-579612119/" target="blank") LinkedIn/emoryhare
+  .signature
+    hr
+    p Site by Emory Hare 2019 &copy
 
-
-
-  //- Back to Top Button
-  button#scroll-top
-    i.material-icons arrow_upward
-
-script(src="js/main.js")
-  
-  
+    
